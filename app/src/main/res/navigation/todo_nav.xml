@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/todo_nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.dailytodo.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_addTodo"
+            app:destination="@id/addTodo" />
+        <action
+            android:id="@+id/action_home_to_updateTodo"
+            app:destination="@id/updateTodo" />
+    </fragment>
+    <dialog
+        android:id="@+id/addTodo"
+        android:name="com.example.dailytodo.fragment.AddTodo"
+        android:label="fragment_add_todo"
+        tools:layout="@layout/fragment_add_todo" >
+        <action
+            android:id="@+id/action_addTodo_to_home"
+            app:destination="@id/home" />
+    </dialog>
+    <dialog
+        android:id="@+id/updateTodo"
+        android:name="com.example.dailytodo.fragment.UpdateTodo"
+        android:label="fragment_update_todo"
+        tools:layout="@layout/fragment_update_todo" >
+        <action
+            android:id="@+id/action_updateTodo_to_home"
+            app:destination="@id/home" />
+        <argument
+            android:name="updatetodo"
+            app:argType="com.example.dailytodo.database.Todo" />
+    </dialog>
+</navigation>

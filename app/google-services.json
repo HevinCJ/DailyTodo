@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802995140660",
+    "project_id": "dailytodo-b27f2",
+    "storage_bucket": "dailytodo-b27f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802995140660:android:02374aac04f65a7038f261",
+        "android_client_info": {
+          "package_name": "com.example.dailytodo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvNMwxpOJfROb6333-vlnSbL7EYQoRPYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

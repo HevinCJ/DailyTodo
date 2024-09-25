@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sortby"
+        android:title="@string/sort_by"
+        app:showAsAction="never"
+        >
+        <menu>
+            <item
+                android:id="@+id/priority"
+                android:title="@string/priority">
+
+                <menu>
+
+                    <item android:id="@+id/highPriority"
+                        android:title="@string/high"
+                        />
+
+                    <item android:id="@+id/lowPriority"
+                        android:title="@string/low"
+                        />
+
+
+                </menu>
+
+            </item>
+
+        </menu>
+
+    </item>
+
+</menu>
